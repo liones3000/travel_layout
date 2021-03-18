@@ -1,0 +1,23 @@
+.adress {
+  &__title {
+    margin-bottom: 33px;
+  }
+  &__text {
+    line-height: 1.75;
+    color: #aaa9a9;
+    margin-bottom: 32px;
+  }
+  &__link {
+    font-weight: 600;
+    line-height: 1.75;
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+    &--tel {
+      color: #2c4458;
+    }
+    &--mail {
+      color: $color-lynch;
+    }
+  }
+}

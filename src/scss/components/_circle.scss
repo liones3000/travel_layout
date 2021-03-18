@@ -1,0 +1,11 @@
+.circle {
+  &__item {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #efd6ac;
+    border-radius: 50%;
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+}

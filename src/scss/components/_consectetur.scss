@@ -1,0 +1,14 @@
+.consectetur {
+  background: url("/img/header_bg.jpg") left / cover no-repeat;
+  min-height: 100vh;
+
+  &__container {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__article {
+    padding-top: 17.5%;
+    max-width: 745px;
+  }
+}

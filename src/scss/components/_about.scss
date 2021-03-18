@@ -1,0 +1,30 @@
+.about {
+  position: relative;
+  background: url("/img/about-bg.jpg") bottom / cover no-repeat;
+  max-height: 836px;
+  height: 86vh;
+
+  &__slider {
+    margin-left: 14.4%;
+    width: 100%;
+    transform: translateY(-18%);
+    overflow: hidden;
+    max-width: 1365px;
+    border-bottom-right-radius: 5px;
+  }
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__buttons {
+    position: absolute;
+    display: inline-block;
+    top: 61.8%;
+    left: 39.3%;
+    .media__btn:not(:last-child) {
+      margin-right: 4px;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.tour {
+  position: relative;
+  min-height: 595px;
+  padding-top: 65px;
+
+  &__text {
+    max-width: 260px;
+    display: inline-block;
+  }
+
+  &__title {
+    margin-bottom: 22px;
+  }
+
+  &__descr {
+    font-size: 15px;
+    line-height: 1.6;
+    color: $color-gray;
+    margin-bottom: 75px;
+  }
+  &__media {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 21.6%;
+    padding: 25px 0;
+    max-width: 1500px;
+    transform: translateY(-33.6%);
+  }
+}

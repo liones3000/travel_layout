@@ -1,0 +1,13 @@
+.copyright {
+  padding: 15px 0;
+  background-color: #688095;
+  color: #cccccc;
+  &__list {
+    margin-right: 57px;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 37px;
+    }
+  }
+}

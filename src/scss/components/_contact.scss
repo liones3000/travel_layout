@@ -1,0 +1,47 @@
+.contact {
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 38px;
+    }
+
+    &:hover {
+      .contact__icon {
+        transition: border-color 0.3s;
+        border-color: rgba(196, 157, 72, 0.5);
+      }
+    }
+  }
+
+  &__tel {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url(/img/sprite.svg#phone-icon) center/cover no-repeat;
+  }
+
+  &__mail {
+    display: block;
+    width: 19px;
+    height: 15px;
+    background: url(/img/sprite.svg#mail-icon) center/cover no-repeat;
+  }
+
+  &__icon {
+    margin-right: 10px;
+    width: 57px;
+    height: 57px;
+    background-color: rgba(239, 214, 172, 0.18);
+    background-clip: padding-box;
+    border-radius: 100%;
+    border: 4px solid transparent;
+    transition: border-color 0.3s;
+  }
+
+  &__text {
+    padding: 0 5px;
+    font-size: 18px;
+    color: rgba(239, 214, 172, 0.29);
+  }
+}

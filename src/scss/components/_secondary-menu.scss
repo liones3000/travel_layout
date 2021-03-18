@@ -1,0 +1,27 @@
+.secondary-menu {
+  &__title {
+    margin-bottom: 35px;
+  }
+  &__item {
+    line-height: 1.375;
+    text-transform: uppercase;
+    color: #aaa9a9;
+    position: relative;
+    padding-left: 16px + 7px;
+    &:not(:last-child) {
+      margin-bottom: 17px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      top: 50%;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+      bottom: 0;
+      background: url("/img/sprite.svg#li-arrow") center / cover no-repeat;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.logo {
+  &__img {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    margin-right: 15px;
+  }
+  &__title {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+    color: #efd6ac;
+    &.bold {
+      font-weight: 800;
+    }
+  }
+}

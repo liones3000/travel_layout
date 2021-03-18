@@ -1,0 +1,40 @@
+.menu {
+  &__list {
+    padding: 10px;
+  }
+  &__item {
+    position: relative;
+    &:hover {
+      .menu__link::before {
+        transition: background-color 0.3s;
+        background-color: #c49d48;
+      }
+    }
+    &:not(:last-child) {
+      margin-right: 49px;
+    }
+  }
+  &__link {
+    display: block;
+    font-size: 17px;
+    color: #e2eaf0;
+    text-transform: uppercase;
+
+    &--active {
+      &.menu__link::before {
+        background-color: #c49d48;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 2px;
+      right: -2px;
+      height: 2px;
+      background-color: transparent;
+      transition: background-color 0.3s;
+    }
+  }
+}

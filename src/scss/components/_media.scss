@@ -1,0 +1,81 @@
+.media {
+  // width: 100%;
+  overflow: hidden;
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  &__item {
+    flex-shrink: 0;
+    position: relative;
+    &:hover {
+      // filter: grayscale(50%);
+    }
+    &.swiper-slide-next {
+      transform: translateY(-25px);
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: inset 0px 4px 80px #000000;
+      }
+    }
+  }
+  &__title {
+    position: absolute;
+    color: $color-white;
+    top: 40px;
+    left: 40px;
+  }
+  &__img {
+    width: 100%;
+    // max-width: 350px;
+    object-fit: cover;
+  }
+  &__btn {
+    padding: 0;
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #688095;
+    transition: all 0.1s;
+    box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.25);
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+    &:hover {
+      box-shadow: inset 0px 0px 0px 4px rgba(255, 255, 255, 0.5);
+      transition: all 0.1s;
+      &::before {
+        width: 16px;
+        height: 16px;
+      }
+    }
+    &--next::before,
+    &--prev::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      right: 0;
+      bottom: 0;
+      color: #fff;
+      background: url("/img/sprite.svg#btn-arrow") center / cover no-repeat;
+      filter: brightness(0) invert(1);
+    }
+    &--prev::before {
+      transform: rotate(180deg) translate(50%, 50%);
+    }
+  }
+}

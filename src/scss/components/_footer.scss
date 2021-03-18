@@ -1,0 +1,50 @@
+.footer {
+  font-family: "Open Sans", sans-serif;
+  &__container {
+    padding: 50px 0;
+    max-width: 1355px;
+    margin-bottom: 110px;
+  }
+  &__logo {
+    max-width: 285px;
+    padding: 4px 6px;
+    flex-shrink: 0;
+    margin-right: 130px;
+    &-block {
+      margin-bottom: 35px;
+    }
+    &-title {
+      color: $color-tussock;
+    }
+    &-text {
+      color: $color-lynch;
+      line-height: 1.75;
+      margin-bottom: 55px;
+      padding-right: 23px;
+    }
+  }
+  &__nav {
+    flex-shrink: 0;
+    max-width: 250px;
+    padding: 1px 5px;
+    &-1 {
+      margin-right: 135px;
+    }
+    &-2 {
+      margin-right: 124px;
+    }
+  }
+  &__copyright {
+    flex-shrink: 0;
+  }
+  &__title {
+    color: $color-lynch;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  &__contact {
+    max-width: 378px;
+    padding-top: 1px;
+    padding-left: 5px;
+  }
+}
