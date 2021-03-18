@@ -91,7 +91,7 @@ ul {
     height: 26px;
     position: relative;
     display: block;
-    background: url("/img/sprite.svg#double-arrows-down") center / cover
+    background: url("../img/sprite.svg#double-arrows-down") center / cover
       no-repeat;
   }
 }
@@ -111,7 +111,7 @@ ul {
   width: 40px;
   height: 40px;
   margin: auto;
-  background: url("/img/sprite.svg#btn-play") center / cover no-repeat;
+  background: url("../img/sprite.svg#btn-play") center / cover no-repeat;
   z-index: 10;
 }
 
@@ -141,7 +141,7 @@ ul {
       width: 24px;
       transform: translateY(-50%);
       height: 24px;
-      background: url("/img/sprite.svg#compass") center / cover no-repeat;
+      background: url("../img/sprite.svg#compass") center / cover no-repeat;
     }
   }
   &--mail {
@@ -154,7 +154,7 @@ ul {
       width: 32px;
       height: 24px;
       transform: translateY(-50%);
-      background: url("/img/sprite.svg#mail") center / cover no-repeat;
+      background: url("../img/sprite.svg#mail") center / cover no-repeat;
     }
   }
 }

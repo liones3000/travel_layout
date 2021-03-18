@@ -71,7 +71,7 @@
       right: 0;
       bottom: 0;
       color: #fff;
-      background: url("/img/sprite.svg#btn-arrow") center / cover no-repeat;
+      background: url("../img/sprite.svg#btn-arrow") center / cover no-repeat;
       filter: brightness(0) invert(1);
     }
     &--prev::before {

@@ -18,14 +18,14 @@
     display: block;
     width: 15px;
     height: 15px;
-    background: url(/img/sprite.svg#phone-icon) center/cover no-repeat;
+    background: url("../img/sprite.svg#phone-icon") center/cover no-repeat;
   }
 
   &__mail {
     display: block;
     width: 19px;
     height: 15px;
-    background: url(/img/sprite.svg#mail-icon) center/cover no-repeat;
+    background: url("../img/sprite.svg#mail-icon") center/cover no-repeat;
   }
 
   &__icon {
